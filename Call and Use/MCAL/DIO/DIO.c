@@ -244,3 +244,81 @@ extern void DIO_vidSetPortValue(u8 PORT, u8 Value)    //Assigning The Whole PORT
         	}
     }
 }
+
+extern void DIO_vidTogglePinValue(u8 PORT, u8 PIN)   //Assigning The Whole PORT as a Value
+{
+    switch(PORT)    //Probabilities of PORT
+    {
+        case A:     //Probability #1 : if The PORT's Direction was A
+            {
+                TOGGLE_Bit(PORTA, PIN); //Toggle that Specific PIN by DDRA
+
+                break;  //Get out of the Switch Statement
+            }
+
+    	case B:     //Probability #1 : if The PORT's Direction was A
+    		{
+    			TOGGLE_Bit(PORTB, PIN); //Toggle that Specific PIN by DDRA
+
+    			break;  //Get out of the Switch Statement
+    		}
+
+    	case C:     //Probability #1 : if The PORT's Direction was A
+    		{
+    			TOGGLE_Bit(PORTC, PIN); //Toggle that Specific PIN by DDRA
+
+    			break;  //Get out of the Switch Statement
+    		}
+
+    	case D:     //Probability #1 : if The PORT's Direction was A
+    		{
+    			TOGGLE_Bit(PORTD, PIN); //Toggle that Specific PIN by DDRA
+
+    			break;  //Get out of the Switch Statement
+    		}
+
+    	default:
+    		{
+    			break; //Just get out
+    		}
+    }
+}
+
+extern void DIO_vidTogglePortValue(u8 PORT)   //Assigning The Whole PORT as a Value
+{
+	switch(PORT)    //Probabilities of PORT
+	    {
+	        case A:     //Probability #1 : if The PORT's Direction was A
+	            {
+	                TOGGLE_Bit(PORTA, PIN7); //Toggle that Specific PIN by DDRA
+
+	                break;  //Get out of the Switch Statement
+	            }
+
+	    	case B:     //Probability #1 : if The PORT's Direction was A
+	    		{
+	    			TOGGLE_Bit(PORTB, PIN7); //Toggle that Specific PIN by DDRA
+
+	    			break;  //Get out of the Switch Statement
+	    		}
+
+	    	case C:     //Probability #1 : if The PORT's Direction was A
+	    		{
+	    			TOGGLE_Bit(PORTC, PIN7); //Toggle that Specific PIN by DDRA
+
+	    			break;  //Get out of the Switch Statement
+	    		}
+
+	    	case D:     //Probability #1 : if The PORT's Direction was A
+	    		{
+	    			TOGGLE_Bit(PORTD, PIN7); //Toggle that Specific PIN by DDRA
+
+	    			break;  //Get out of the Switch Statement
+	    		}
+
+	    	default:
+	    		{
+	    			break; //Just get out
+	    		}
+	    }
+}

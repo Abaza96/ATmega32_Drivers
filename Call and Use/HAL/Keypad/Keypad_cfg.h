@@ -9,8 +9,8 @@
 #define KEYPAD_CFG_H_			//Define it
 
 //The Keypad's Properties
-#define KeypadPort D		   //Place The Port of The Keypad in here
-#define Keypad_SwitchDelay 50  //Place The Bouncing Delay in Here (Range of Delay should be from 1 microseconds : 50 microseconds)
+#define KeypadPort B		   //Place The Port of The Keypad in here
+#define Keypad_SwitchDelay 100 //Place The Bouncing Delay in Here (Range of Delay should be from 1 microseconds : 50 microseconds)
 #define Keypad_Size 16		   //Place The Number of The Keypads in Here
 
 //Pins of Keypad

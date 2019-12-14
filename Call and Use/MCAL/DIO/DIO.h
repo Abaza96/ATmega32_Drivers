@@ -51,10 +51,14 @@ extern void DIO_vidSetPinDirection(u8 PORT, u8 PIN, u8 Dir);  //Set the DDR in t
 
 extern void DIO_vidWritePinValue(u8 PORT, u8 PIN, u8 Value);  //Write the PORT Value in the AVR's DIO that Returns Void
 
+extern void DIO_vidTogglePinValue(u8 PORT, u8 Value);   //Assigning The Whole PORT as a Value
+
 extern u8 DIO_u8GetPinValue(u8 PORT, u8 PIN);  //Get the PIN Value in the AVR's DIO that Returns unsigned 8-Bits
 
 extern void DIO_vidSetPortDirection(u8 PORT, u8 Dir);   //Assigning The Whole PORT as a Direction
 
 extern void DIO_vidSetPortValue(u8 PORT, u8 Value);   //Assigning The Whole PORT as a Value
+
+extern void DIO_vidTogglePortValue(u8 PORT);   //Assigning The Whole PORT as a Value
 
 #endif  //Stop Right There
